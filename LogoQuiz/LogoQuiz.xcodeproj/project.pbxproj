@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		6BE65DA01C22E5E300C97228 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65D9F1C22E5E300C97228 /* main.m */; };
-		6BE65DA31C22E5E300C97228 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65DA21C22E5E300C97228 /* AppDelegate.m */; };
-		6BE65DA61C22E5E300C97228 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65DA51C22E5E300C97228 /* ViewController.m */; };
 		6BE65DA91C22E5E300C97228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE65DA71C22E5E300C97228 /* Main.storyboard */; };
 		6BE65DAB1C22E5E300C97228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE65DAA1C22E5E300C97228 /* Assets.xcassets */; };
 		6BE65DAE1C22E5E300C97228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE65DAC1C22E5E300C97228 /* LaunchScreen.storyboard */; };
+		6BE65DBE1C22E81E00C97228 /* LQHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65DBC1C22E81E00C97228 /* LQHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6BE65DC31C22E91300C97228 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65DC21C22E91300C97228 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6BE65D9B1C22E5E300C97228 /* LogoQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogoQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE65D9F1C22E5E300C97228 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6BE65DA11C22E5E300C97228 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6BE65DA21C22E5E300C97228 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6BE65DA41C22E5E300C97228 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6BE65DA51C22E5E300C97228 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6BE65DA81C22E5E300C97228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BE65DAA1C22E5E300C97228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BE65DAD1C22E5E300C97228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BE65DAF1C22E5E300C97228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE65DBB1C22E81E00C97228 /* LQHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQHomeViewController.h; sourceTree = "<group>"; };
+		6BE65DBC1C22E81E00C97228 /* LQHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQHomeViewController.m; sourceTree = "<group>"; };
+		6BE65DC11C22E91300C97228 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6BE65DC21C22E91300C97228 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +58,8 @@
 		6BE65D9D1C22E5E300C97228 /* LogoQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				6BE65DA11C22E5E300C97228 /* AppDelegate.h */,
-				6BE65DA21C22E5E300C97228 /* AppDelegate.m */,
-				6BE65DA41C22E5E300C97228 /* ViewController.h */,
-				6BE65DA51C22E5E300C97228 /* ViewController.m */,
+				6BE65DC01C22E91300C97228 /* App Delegate */,
+				6BE65DB91C22E7F200C97228 /* View Controllers */,
 				6BE65DA71C22E5E300C97228 /* Main.storyboard */,
 				6BE65DAA1C22E5E300C97228 /* Assets.xcassets */,
 				6BE65DAC1C22E5E300C97228 /* LaunchScreen.storyboard */,
@@ -77,6 +75,32 @@
 				6BE65D9F1C22E5E300C97228 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BE65DB91C22E7F200C97228 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BE65DBA1C22E7F200C97228 /* Home */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6BE65DBA1C22E7F200C97228 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6BE65DBB1C22E81E00C97228 /* LQHomeViewController.h */,
+				6BE65DBC1C22E81E00C97228 /* LQHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6BE65DC01C22E91300C97228 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6BE65DC11C22E91300C97228 /* AppDelegate.h */,
+				6BE65DC21C22E91300C97228 /* AppDelegate.m */,
+			);
+			path = "App Delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BE65DA61C22E5E300C97228 /* ViewController.m in Sources */,
-				6BE65DA31C22E5E300C97228 /* AppDelegate.m in Sources */,
+				6BE65DBE1C22E81E00C97228 /* LQHomeViewController.m in Sources */,
 				6BE65DA01C22E5E300C97228 /* main.m in Sources */,
+				6BE65DC31C22E91300C97228 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

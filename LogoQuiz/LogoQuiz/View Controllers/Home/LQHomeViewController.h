@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LQHomeViewController.h
 //  LogoQuiz
 //
 //  Created by Pulkit on 17/12/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LQHomeViewController : UIViewController
 
 @end
-
