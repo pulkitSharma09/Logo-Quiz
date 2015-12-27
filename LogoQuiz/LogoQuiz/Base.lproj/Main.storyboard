@@ -15,10 +15,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cq0-rb-vI5">
+                                <rect key="frame" x="130" y="187" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fn2-r1-jFS"/>
+                                    <constraint firstAttribute="width" constant="60" id="ItH-ay-wXB"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Play"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAm-9z-pdA">
+                                <rect key="frame" x="122.5" y="263" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ze8-aC-ZNB"/>
+                                    <constraint firstAttribute="width" constant="75" id="s0J-P6-v79"/>
+                                </constraints>
+                                <state key="normal" title="Options"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrj-8v-5fC">
+                                <rect key="frame" x="120" y="301" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JBY-4Y-iF7"/>
+                                    <constraint firstAttribute="width" constant="80" id="NYM-sK-LQc"/>
+                                </constraints>
+                                <state key="normal" title="Statistics"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYa-Fi-R1V">
+                                <rect key="frame" x="125" y="225" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="GXd-ui-vXj"/>
+                                    <constraint firstAttribute="height" constant="30" id="y07-Tb-nw7"/>
+                                </constraints>
+                                <state key="normal" title="Market"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RYa-Fi-R1V" firstAttribute="top" secondItem="cq0-rb-vI5" secondAttribute="bottom" constant="8" id="7Cz-eN-ere"/>
+                            <constraint firstItem="Yrj-8v-5fC" firstAttribute="top" secondItem="RYa-Fi-R1V" secondAttribute="bottom" constant="46" id="JRM-o3-kFQ"/>
+                            <constraint firstItem="cAm-9z-pdA" firstAttribute="top" secondItem="RYa-Fi-R1V" secondAttribute="bottom" constant="8" id="TWw-9k-1y4"/>
+                            <constraint firstItem="cq0-rb-vI5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XQM-k0-FNL"/>
+                            <constraint firstItem="RYa-Fi-R1V" firstAttribute="centerX" secondItem="cq0-rb-vI5" secondAttribute="centerX" id="YE3-B3-Kzm"/>
+                            <constraint firstItem="Yrj-8v-5fC" firstAttribute="centerX" secondItem="cAm-9z-pdA" secondAttribute="centerX" id="aP7-ak-2sZ"/>
+                            <constraint firstItem="RYa-Fi-R1V" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k5Q-oS-Yps"/>
+                            <constraint firstItem="cAm-9z-pdA" firstAttribute="centerX" secondItem="RYa-Fi-R1V" secondAttribute="centerX" id="kel-lW-bh1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Z5t-je-RJ6"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="optionsButton" destination="cAm-9z-pdA" id="cWu-Bt-XXT"/>
+                        <outlet property="playButton" destination="cq0-rb-vI5" id="v3p-UQ-qhx"/>
+                        <outlet property="statisticsButton" destination="Yrj-8v-5fC" id="RA7-uu-EoO"/>
+                        <outlet property="storeButton" destination="k5Q-oS-Yps" id="RVe-nF-Ofd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

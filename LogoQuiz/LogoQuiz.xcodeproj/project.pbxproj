@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B1064C11C302A5B0091CB57 /* Collage-Blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1064C01C302A5B0091CB57 /* Collage-Blur.png */; settings = {ASSET_TAGS = (); }; };
+		6B1064C51C302C430091CB57 /* UIViewController+BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1064C41C302C430091CB57 /* UIViewController+BackgroundView.m */; settings = {ASSET_TAGS = (); }; };
+		6B1064C71C30441C0091CB57 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1064C61C30441C0091CB57 /* QuartzCore.framework */; };
 		6BE65DA01C22E5E300C97228 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65D9F1C22E5E300C97228 /* main.m */; };
 		6BE65DA91C22E5E300C97228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE65DA71C22E5E300C97228 /* Main.storyboard */; };
 		6BE65DAB1C22E5E300C97228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE65DAA1C22E5E300C97228 /* Assets.xcassets */; };
@@ -16,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B1064C01C302A5B0091CB57 /* Collage-Blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Collage-Blur.png"; sourceTree = "<group>"; };
+		6B1064C31C302C430091CB57 /* UIViewController+BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackgroundView.h"; sourceTree = "<group>"; };
+		6B1064C41C302C430091CB57 /* UIViewController+BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackgroundView.m"; sourceTree = "<group>"; };
+		6B1064C61C30441C0091CB57 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6BE65D9B1C22E5E300C97228 /* LogoQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogoQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE65D9F1C22E5E300C97228 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BE65DA81C22E5E300C97228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,15 +40,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B1064C71C30441C0091CB57 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B1064BE1C302A5B0091CB57 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6B1064BF1C302A5B0091CB57 /* Background */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		6B1064BF1C302A5B0091CB57 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				6B1064C01C302A5B0091CB57 /* Collage-Blur.png */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		6B1064C21C302C430091CB57 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				6B1064C31C302C430091CB57 /* UIViewController+BackgroundView.h */,
+				6B1064C41C302C430091CB57 /* UIViewController+BackgroundView.m */,
+			);
+			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
 		6BE65D921C22E5E300C97228 = {
 			isa = PBXGroup;
 			children = (
+				6B1064C61C30441C0091CB57 /* QuartzCore.framework */,
 				6BE65D9D1C22E5E300C97228 /* LogoQuiz */,
 				6BE65D9C1C22E5E300C97228 /* Products */,
 			);
@@ -58,6 +92,7 @@
 		6BE65D9D1C22E5E300C97228 /* LogoQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				6B1064BE1C302A5B0091CB57 /* Images */,
 				6BE65DC01C22E91300C97228 /* App Delegate */,
 				6BE65DB91C22E7F200C97228 /* View Controllers */,
 				6BE65DA71C22E5E300C97228 /* Main.storyboard */,
@@ -80,6 +115,7 @@
 		6BE65DB91C22E7F200C97228 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6B1064C21C302C430091CB57 /* Miscellaneous */,
 				6BE65DBA1C22E7F200C97228 /* Home */,
 			);
 			path = "View Controllers";
@@ -160,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B1064C11C302A5B0091CB57 /* Collage-Blur.png in Resources */,
 				6BE65DAE1C22E5E300C97228 /* LaunchScreen.storyboard in Resources */,
 				6BE65DAB1C22E5E300C97228 /* Assets.xcassets in Resources */,
 				6BE65DA91C22E5E300C97228 /* Main.storyboard in Resources */,
@@ -174,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BE65DBE1C22E81E00C97228 /* LQHomeViewController.m in Sources */,
+				6B1064C51C302C430091CB57 /* UIViewController+BackgroundView.m in Sources */,
 				6BE65DA01C22E5E300C97228 /* main.m in Sources */,
 				6BE65DC31C22E91300C97228 /* AppDelegate.m in Sources */,
 			);
@@ -322,6 +360,7 @@
 				6BE65DB41C22E5E300C97228 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

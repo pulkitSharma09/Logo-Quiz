@@ -7,8 +7,14 @@
 //
 
 #import "LQHomeViewController.h"
+#import "UIViewController+BackgroundView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface LQHomeViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *storeButton;
+@property (weak, nonatomic) IBOutlet UIButton *optionsButton;
+@property (weak, nonatomic) IBOutlet UIButton *statisticsButton;
 
 @end
 
@@ -20,8 +26,18 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    
-    
+    [self setupBackgroundImage];
+    [self hideNavigationBar];
+    [self setupButtonViews];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+}
+
+-(void)setupButtonViews{
+    [_playButton.layer setBorderWidth:1.0];
+    [_playButton setBackgroundColor:[UIColor lightGrayColor]];
+    [_playButton.layer setBorderColor:[[UIColor orangeColor] CGColor]];
 }
 
 - (void)didReceiveMemoryWarning {
